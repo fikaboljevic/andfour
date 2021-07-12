@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+           <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+        </div>
+        <div class="menu hide">
+            <img src="images/ham.svg" alt="menu" id="menu" ></a> 
+            <ul class="show hide" id="nav">
+                <a><img src="images/exit.svg" alt="exit" id="exit" class="izadji" ></a>
+                <li><a href="home">Home</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="prvi-dio">
+        <div class="kurs">
+        <img src="images/server.svg" alt="server">
+        <h1>Web Hosting for the Modern Era</h1>
+        <p>Go serverless and pay only for what you use.</p>
+        <img src="images/scroll.svg" alt="scroll" class="scroll sakrij">
+    </div>
+    </div>
+    <div class="drugi-dio">
+        <div class="kurs">
+            <ul>
+            <li>
+                <img src="images/icon-1.svg" alt="icon1" class="prva">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+            </li>
+            <li>
+                <img src="images/icon-2.svg" alt="icon2">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+            </li>
+            <li>
+                <img src="images/icon-3.svg" alt="icon3">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+            </li>
+            </ul>
+        
+        </div>
+    </div>
+    <div class="treci-dio">
+        <div class="kurs">
+            <ul>
+            <li>
+                <figure>
+                <img src="images/user1.png" alt="user1">
+                <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                <figcaption class="prvi-heading">- Jane Doe</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                <img src="images/user2.png" alt="user2">
+                <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                <figcaption class="drugi-heading">- John Doe</figcaption>
+                </figure>
+            </li>
+
+            </ul>
+        </div>
+        
+    </div>
+    <div class="cetvrti-dio">
+        <h1>Start your free trial now!</h1>
+        <a href="#" class="dugme">Get Started</a>
+    </div>
+    <div class="peti-dio">
+        <div class="unutra">
+            <a href="index.html">
+            <img src="images/logo-white.svg" alt="logo">
+            </a>
+            <p>Melrose Place, 90210</p>
+            <span>USA</span>
+            <ul>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide');
+            
+        })
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide');
+        })
+
+    </script>
+</body>
+</html>

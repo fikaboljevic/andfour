@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+    
+}
+.menu img{
+    position: relative;
+    margin-top: 15px;
+    height: 18px;
+}
+.menu ul img{
+    left: 90%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    
+}
+.sakrij{
+    display: none;
+}
+.menu .hide{
+    display:none;
+}
+.menu ul{
+    
+    background-color:#24292cff;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 60%;
+    position:  fixed;
+    z-index: 4;
+    
+}
+.menu ul li{
+    background-color: #31373bff;
+    
+    
+    
+}
+.menu ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    display: block;
+    
+}
+.menu ul li a:hover{
+    background-color:#41494eff ;
+    
+}
+.hide img{
+    cursor: pointer;
+}
+.prvi-dio .hide{
+    display: none;
+}
+.prvi-dio{
+    text-align: center;
+    padding: 15px;
+    margin-bottom:80px ;
+}
+.prvi-dio img{
+    width:70%;
+    margin:2em auto 2em 25%;
+}
+.prvi-dio h1{
+    font-size: 22px;
+    margin-bottom:25px ;
+}
+.prvi-dio p{
+    font-size:16px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+.drugi-dio{
+    background-color: #00c2ffff;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+.drugi-dio ul{
+    transform: skewY(2deg);
+}
+.drugi-dio::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color:#00c2ffff;
+    
+    position: absolute;
+    top: -39px;
+    right: 0;
+}
+.drugi-dio::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    top: -80px;
+    right:-2px;
+}
+.drugi-dio img{
+    height: 50px;
+    margin-bottom: 20px;
+}
+.drugi-dio ul li:nth-child(3) img{
+    height: 70px;
+}
+.drugi-dio p{
+    margin-bottom: 40px;
+}
+.drugi-dio .prva{
+    margin-top: 40px;
+}
+
+
+.treci-dio{
+    background-color: #f6f6f6ff;
+    text-align: center;
+    padding: 60px 50px ;
+    margin-top: -3%;
+}
+.treci-dio ul li:first-child{
+    margin-bottom: 2em;
+}
+.treci-dio img{
+    margin-bottom: 20px;
+}
+figure{
+    margin: 0;
+    padding:0;
+}
+figcaption{
+    font-weight: bold;
+    color: #00c2ffff;
+    margin-top: 10px;
+}
+
+.cetvrti-dio{
+    background-color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+.cetvrti-dio h1{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.cetvrti-dio .dugme{
+    
+    background-color: #00cc80ff;
+    width: 95%;
+    display: block;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 70px;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 1;
+}
+.peti-dio{
+    background-color:#3d444aff ;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+    
+}
+.unutra{
+    transform: skewY(-2deg);
+}
+.peti-dio::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #3d444aff;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+.peti-dio::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    z-index: -1;
+}
+.peti-dio img{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.peti-dio p{
+    font-size: 14px;
+}
+.peti-dio span{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.peti-dio a{
+    color: #8f9a86ff;
+    font-size: 12px;
+   
+}
+.peti-dio ul li{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width:650px){
+    .prvi-dio h1{
+        font-size: 40px;
+    }
+    .prvi-dio p{
+        font-size: 25px;
+        margin-bottom: 12%;
+    }
+    .prvi-dio img{
+        width: 60%;
+        margin-bottom: 3.2em;
+    }
+     
+    .drugi-dio ul{
+        display: flex;
+        
+       
+    }
+    .drugi-dio .prva{
+        margin-top: 0;
+    }
+    .drugi-dio img{
+        width: 40px;
+    }
+    
+    .drugi-dio ul li:nth-child(3) img{
+        width: 23px;
+        margin-top: -12px;      
+        margin-bottom: 12px;  
+    }
+    .drugi-dio ul li{
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+    .drugi-dio ul li p{
+        padding: 0 .8em;
+    }
+   
+    
+    .treci-dio ul{
+        display: flex;
+        
+    }
+    .treci-dio ul li{
+        padding:0 20px;
+        margin:0 2%;
+       
+    }
+    
+    .treci-dio blockquote{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width:875px){
+  
+    .prvi-dio{
+        margin-bottom: 10%;
+        
+    }
+    .drugi-dio{
+        padding-top: 80px;
+    }
+    .drugi-dio ul{
+        margin: 0 0 4% 0;
+    }
+    .drugi-dio img{
+        width: 50px;
+    }
+    .drugi-dio ul li:nth-child(3) img{
+        width: 30px;
+    }
+   .treci-dio ul{
+       margin: 4% 0 0 0;
+   }
+}
+@media only screen and (min-width:1024px){
+    .cetvrti-dio .dugme{
+        width: 50%;
+    }
+    .hide{
+        z-index: -1;
+    }
+    .header, .kurs{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .prvi-dio img{
+        width: 50%;
+        margin-top: 0;
+    }
+    .prvi-dio h1{
+        font-size: 45px;
+    }
+    .prvi-dio .sakrij{
+        display: block;
+    }
+    .prvi-dio .scroll{
+        width: 30px;
+        margin: auto;
+    }
+    .drugi-dio .kurs ul img{
+        width: max-content;
+    }
+    .menu .hide{
+        display: block;
+        position: inherit;
+    }
+    .menu img{
+        display: none;
+    }
+    .hide ul{
+        background-color: white;
+        width: auto;
+        margin-top: -10px;
+    }
+    .hide ul li{
+        display: inline;
+        float: left;
+        padding-left: 65px;
+        background-color: inherit;
+        
+    }
+
+.hide ul li a{
+    color: black;
+    padding: 0;  
+}
+.hide ul li a:hover{
+    background-color: inherit;
+}
+.scroll{
+    animation: move 2s infinite alternate;
+}
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform:translateY(20px) ;
+    }
+}
+}
+
+
